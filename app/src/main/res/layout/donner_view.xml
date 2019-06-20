@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/ic_donner"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/nametv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="#0583A7"
+        android:padding="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:id="@+id/phonetv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textColor="#0583A7"
+            android:padding="15dp"/>
+        <ImageView
+            android:layout_marginLeft="25dp"
+        android:id="@+id/imvphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+
+        android:layout_toEndOf="@+id/tvphone"
+        android:layout_toRightOf="@+id/tvphone"
+        app:srcCompat="@drawable/ic_phone_black_24dp" />
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/bloodgrouptv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="#0583A7"
+        android:padding="15dp"/>
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--&gt;-->
+       <!---->
+        <!--<ImageView-->
+            <!--android:id="@+id/imvphone"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_marginLeft="80dp"-->
+
+
+            <!--android:layout_toEndOf="@+id/tvphone"-->
+            <!--android:layout_toRightOf="@+id/tvphone"-->
+            <!--app:srcCompat="@drawable/ic_phone_black_24dp" />-->
+        <!--<TextView-->
+            <!--android:id="@+id/contacttv"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="للتواصل"-->
+            <!--android:gravity="center"-->
+            <!--android:textSize="25dp"-->
+            <!--android:textColor="#0583A7"-->
+            <!--android:padding="15dp"/>-->
+        <!---->
+    <!--</LinearLayout>-->
+
+
+</LinearLayout>
