@@ -187,8 +187,12 @@ public class RegisterActivity extends AppCompatActivity {
         //get bloodtype from spinner
         bloodgroup = bloodGroupSpinner.getSelectedItem().toString();
 
-        if (TextUtils.isEmpty(name) || TextUtils.isEmpty(email) || TextUtils.isEmpty(password)||TextUtils.isEmpty(repassword)|| !password.equals(repassword) || TextUtils.isEmpty(phone_number) ||TextUtils.isEmpty(age1)
-                || radiogenId==-1||radiotypeId==-1||TextUtils.isEmpty(bloodgroup)||TextUtils.isEmpty(showlocation.getText().toString())  )
+        if (TextUtils.isEmpty(name) || TextUtils.isEmpty(email) || TextUtils.isEmpty(password)
+                ||TextUtils.isEmpty(repassword)|| !password.equals(repassword)
+                || TextUtils.isEmpty(phone_number) ||TextUtils.isEmpty(age1)
+                || radiogenId==-1||radiotypeId==-1||TextUtils.isEmpty(bloodgroup)
+//                || TextUtils.isEmpty(showlocation.getText().toString())
+        )
         {
             Toast.makeText(RegisterActivity.this, "Please check  all  data.", Toast.LENGTH_SHORT).show();
             repasswd.setError("Error RePassword");

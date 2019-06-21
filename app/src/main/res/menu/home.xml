@@ -8,11 +8,5 @@
         app:showAsAction="never"
 
         />
-    <item
-        android:id="@+id/profile"
-        android:orderInCategory="100"
-        android:title="Profilr"
-        app:showAsAction="never"
 
-        />
 </menu>

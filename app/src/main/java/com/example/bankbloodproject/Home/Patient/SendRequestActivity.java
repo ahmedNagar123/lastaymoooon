@@ -95,9 +95,17 @@ public class SendRequestActivity extends AppCompatActivity {
 
                     patientModel.setBloodQuantity(10);
                     patientModel.setBloodGroup(bloodgroup);
-                    mFirebaseDatabase.child(key1).setValue(patientModel);
-                    Toast.makeText(SendRequestActivity.this, "Request Send Successfuly....", Toast.LENGTH_SHORT).show();
+                    if (patientModel.getBloodQuantity()!=0 && patientModel.getBloodGroup()!=null && key1!=null) {
+                        mFirebaseDatabase.child(key1).setValue(patientModel);
+                        Toast.makeText(SendRequestActivity.this, "Request Send Successfuly....", Toast.LENGTH_SHORT).show();
+                        Log.i("blood ",patientModel.getBloodGroup()+patientModel.getBloodQuantity());
 
+                    }
+                    else
+                    {
+                        Toast.makeText(SendRequestActivity.this, "please check blood quintity or blood group  ",  Toast.LENGTH_SHORT).show();
+                        Log.i("blood ",patientModel.getBloodGroup()+patientModel.getBloodQuantity());
+                    }
               //  }
 //                else {
 //                    Toast.makeText(SendRequestActivity.this, "all data are requird ..", Toast.LENGTH_SHORT).show();
